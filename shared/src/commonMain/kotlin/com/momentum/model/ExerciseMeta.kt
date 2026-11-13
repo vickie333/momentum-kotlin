@@ -33,7 +33,7 @@ import kotlinx.serialization.Serializable
     }
 }
 @Serializable enum class Ladder { push, verticalPush, pull, squat, lunge, hinge, triceps, coreStability, coreFlexion;
-    val title get() = L(when(this) { push -> "Push"; verticalPush -> "Shoulder press"; pull -> "Pull"; squat -> "Squat"; lunge -> "Lunge"; hinge -> "Hip hinge"; triceps -> "Triceps"; coreStability -> "Core stability"; coreFlexion -> "Core strength" })
+    val title get() = when(this) { push -> L("Push"); verticalPush -> L("Shoulder press"); pull -> L("Pull"); squat -> L("Squat"); lunge -> L("Lunge"); hinge -> L("Hip hinge"); triceps -> L("Triceps"); coreStability -> L("Core stability"); coreFlexion -> L("Core strength") }
 }
 data class ExerciseMeta(val pattern: Pattern, val isCompound: Boolean, val stress: List<BodyArea>, val isImpact: Boolean, val ladder: Ladder?, val rung: Int, val priority: Int)
 object ExerciseMetaTable {

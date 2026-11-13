@@ -7,16 +7,16 @@ import kotlinx.serialization.Serializable
 
 @Serializable enum class WorkoutFeedback { tooEasy, justRight, tooHard;
     val id get() = name
-    val title get() = L(when(this) { tooEasy -> "Too easy"; justRight -> "Just right"; tooHard -> "Too hard" })
+    val title get() = when(this) { tooEasy -> L("Too easy"); justRight -> L("Just right"); tooHard -> L("Too hard") }
     val symbol get() = when(this) { tooEasy -> "hare.fill"; justRight -> "hand.thumbsup.fill"; tooHard -> "tortoise.fill" }
 }
 @Serializable enum class Effort { easy, good, hard;
     val id get() = name
-    val title get() = L(when(this) { easy -> "Easy"; good -> "Good"; hard -> "Hard" })
+    val title get() = when(this) { easy -> L("Easy"); good -> L("Good"); hard -> L("Hard") }
 }
 @Serializable enum class Readiness { low, normal, great;
     val id get() = name
-    val title get() = L(when(this) { low -> "Rough"; normal -> "Okay"; great -> "Great" })
+    val title get() = when(this) { low -> L("Rough"); normal -> L("Okay"); great -> L("Great") }
     val symbol get() = when(this) { low -> "battery.25"; normal -> "battery.75"; great -> "battery.100" }
 }
 @Serializable data class SetLog(val reps: Int, val weightKg: Double, val seconds: Int)

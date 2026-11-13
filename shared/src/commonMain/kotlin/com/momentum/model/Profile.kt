@@ -22,8 +22,8 @@ import kotlinx.serialization.json.decodeFromJsonElement
 @Serializable enum class FitnessLevel {
     beginner, intermediate, advanced;
     val id get() = name
-    val title get() = L(when(this) { beginner -> "Beginner"; intermediate -> "Intermediate"; advanced -> "Advanced" })
-    val summary get() = L(when(this) { beginner -> "New to training or coming back after a long break."; intermediate -> "Training regularly and comfortable with the basics."; advanced -> "Years of consistent training. Ready for volume and load." })
+    val title get() = when(this) { beginner -> L("Beginner"); intermediate -> L("Intermediate"); advanced -> L("Advanced") }
+    val summary get() = when(this) { beginner -> L("New to training or coming back after a long break."); intermediate -> L("Training regularly and comfortable with the basics."); advanced -> L("Years of consistent training. Ready for volume and load.") }
     val rank get() = ordinal
     val weightFactor get() = when(this) { beginner -> 0.6; intermediate -> 1.0; advanced -> 1.4 }
     companion object { fun from(rank: Int): FitnessLevel = entries[rank.coerceIn(0, entries.lastIndex)] }
@@ -31,8 +31,8 @@ import kotlinx.serialization.json.decodeFromJsonElement
 @Serializable enum class Goal {
     buildMuscle, getStronger, loseFat, stayFit;
     val id get() = name
-    val title get() = L(when(this) { buildMuscle -> "Build muscle"; getStronger -> "Get stronger"; loseFat -> "Lose fat"; stayFit -> "General fitness" })
-    val summary get() = L(when(this) { buildMuscle -> "More muscle size. Moderate reps, plenty of weekly volume."; getStronger -> "Lift heavier over time. Fewer reps, longer rests."; loseFat -> "Higher reps, shorter rests and a cardio finisher."; stayFit -> "A balanced routine to feel strong and energetic." })
+    val title get() = when(this) { buildMuscle -> L("Build muscle"); getStronger -> L("Get stronger"); loseFat -> L("Lose fat"); stayFit -> L("General fitness") }
+    val summary get() = when(this) { buildMuscle -> L("More muscle size. Moderate reps, plenty of weekly volume."); getStronger -> L("Lift heavier over time. Fewer reps, longer rests."); loseFat -> L("Higher reps, shorter rests and a cardio finisher."); stayFit -> L("A balanced routine to feel strong and energetic.") }
     val symbol get() = when(this) { buildMuscle -> "dumbbell.fill"; getStronger -> "bolt.fill"; loseFat -> "flame.fill"; stayFit -> "heart.fill" }
     val volumeFactor get() = when(this) { buildMuscle -> 1.0; getStronger, loseFat -> 0.85; stayFit -> 0.7 }
 }
@@ -40,24 +40,24 @@ import kotlinx.serialization.json.decodeFromJsonElement
     bodyweight, dumbbells, fullGym;
     val id get() = name
     val rank get() = ordinal
-    val title get() = L(when(this) { bodyweight -> "No equipment"; dumbbells -> "Dumbbells"; fullGym -> "Full gym" })
-    val summary get() = L(when(this) { bodyweight -> "Just you, a wall and a sturdy chair."; dumbbells -> "A pair (or set) of dumbbells at home."; fullGym -> "Barbells, machines, cables and a pull-up bar." })
+    val title get() = when(this) { bodyweight -> L("No equipment"); dumbbells -> L("Dumbbells"); fullGym -> L("Full gym") }
+    val summary get() = when(this) { bodyweight -> L("Just you, a wall and a sturdy chair."); dumbbells -> L("A pair (or set) of dumbbells at home."); fullGym -> L("Barbells, machines, cables and a pull-up bar.") }
     val symbol get() = when(this) { bodyweight -> "figure.walk"; dumbbells -> "dumbbell"; fullGym -> "figure.strengthtraining.traditional" }
 }
 @Serializable enum class Sex { female, male, unspecified;
     val id get() = name
-    val title get() = L(when(this) { female -> "Female"; male -> "Male"; unspecified -> "Prefer not to say" })
+    val title get() = when(this) { female -> L("Female"); male -> L("Male"); unspecified -> L("Prefer not to say") }
 }
 @Serializable enum class BodyArea { knees, lowerBack, shoulders, wrists;
     val id get() = name
-    val title get() = L(when(this) { knees -> "Knees"; lowerBack -> "Lower back"; shoulders -> "Shoulders"; wrists -> "Wrists" })
+    val title get() = when(this) { knees -> L("Knees"); lowerBack -> L("Lower back"); shoulders -> L("Shoulders"); wrists -> L("Wrists") }
     val symbol get() = when(this) { knees -> "figure.walk"; lowerBack -> "figure.stand"; shoulders -> "figure.arms.open"; wrists -> "hand.raised.fill" }
 }
 @Serializable(with = TrainingHistory.Serializer::class)
 enum class TrainingHistory { never, under6Months, sixTo24Months, over2Years;
     val raw get() = ordinal
     val id get() = raw
-    val title get() = L(when(this) { never -> "Never, or just starting"; under6Months -> "Less than 6 months"; sixTo24Months -> "6 months to 2 years"; over2Years -> "More than 2 years" })
+    val title get() = when(this) { never -> L("Never, or just starting"); under6Months -> L("Less than 6 months"); sixTo24Months -> L("6 months to 2 years"); over2Years -> L("More than 2 years") }
     object Serializer : KSerializer<TrainingHistory> {
         override val descriptor: SerialDescriptor = PrimitiveSerialDescriptor("TrainingHistory", PrimitiveKind.INT)
         override fun serialize(encoder: Encoder, value: TrainingHistory) = encoder.encodeInt(value.raw)
@@ -68,7 +68,7 @@ enum class TrainingHistory { never, under6Months, sixTo24Months, over2Years;
 enum class RecentFrequency { none, oneToTwo, threeToFour, fivePlus;
     val raw get() = ordinal
     val id get() = raw
-    val title get() = L(when(this) { none -> "None lately"; oneToTwo -> "1-2 times a week"; threeToFour -> "3-4 times a week"; fivePlus -> "5+ times a week" })
+    val title get() = when(this) { none -> L("None lately"); oneToTwo -> L("1-2 times a week"); threeToFour -> L("3-4 times a week"); fivePlus -> L("5+ times a week") }
     object Serializer : KSerializer<RecentFrequency> {
         override val descriptor: SerialDescriptor = PrimitiveSerialDescriptor("RecentFrequency", PrimitiveKind.INT)
         override fun serialize(encoder: Encoder, value: RecentFrequency) = encoder.encodeInt(value.raw)
@@ -78,7 +78,7 @@ enum class RecentFrequency { none, oneToTwo, threeToFour, fivePlus;
 @Serializable data class FitnessCheck(val pushups: Int? = null, val squats: Int? = null, val plankSeconds: Int? = null, val pullups: Int? = null)
 @Serializable enum class UnitSystem { metric, imperial;
     val id get() = name
-    val title get() = L(if(this == metric) "Metric (kg, cm)" else "Imperial (lb, in)")
+    val title get() = if(this == metric) L("Metric (kg, cm)") else L("Imperial (lb, in)")
     val weightLabel get() = if(this == metric) "kg" else "lb"
     val heightLabel get() = if(this == metric) "cm" else "in"
     fun displayWeight(kg: Double) = if(this == metric) kg else kg * 2.2046226218
