@@ -13,6 +13,8 @@ jobs:
           distribution: temurin
           java-version: '21'
       - uses: android-actions/setup-android@v3
+        with:
+          packages: ''
       - name: Install Android SDK 37
         run: sdkmanager 'platforms;android-37.0' 'build-tools;37.0.0'
       - name: Test shared core and compile Android app
