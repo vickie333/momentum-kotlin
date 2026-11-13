@@ -9,13 +9,13 @@ Plan maestro: [`../PLAN-MIGRACION-KOTLIN.md`](../PLAN-MIGRACION-KOTLIN.md). Cada
 | 0 Fixtures de oro (repo Swift) | [fase-00-golden.md](fase-00-golden.md) | ✅ Hecha (`fitness-app` es externo, solo lectura) | fixtures copiados a `shared/src/commonTest/resources/golden/` |
 | 1 Esqueleto Gradle/KMP | [fase-01-esqueleto.md](fase-01-esqueleto.md) | ✅ Hecha | `./gradlew :shared:jvmTest :androidApp:assembleDebug` en verde (2026-11-13) |
 | 2 Modelos y serialización | [fase-02-modelos.md](fase-02-modelos.md) | ✅ Hecha | `:shared:jvmTest`, `:androidApp:assembleDebug` y `:shared:compileKotlinIosSimulatorArm64` en verde |
-| 3 Localización | [fase-03-i18n.md](fase-03-i18n.md) | ⬜ Pendiente | `tools/i18n/` copiado, sin exportadores Kotlin |
+| 3 Localización | [fase-03-i18n.md](fase-03-i18n.md) | ✅ Hecha | `LocalizationTest` + job `translations` |
 | 4 Motor | [fase-04-motor.md](fase-04-motor.md) | ⬜ Pendiente | — |
 | 5 Almacén de estado | [fase-05-store.md](fase-05-store.md) | ⬜ Pendiente | — |
 | 6 Tema, componentes, figuras | [fase-06-tema-figuras.md](fase-06-tema-figuras.md) | ⬜ Pendiente | — |
 | 7 Pantallas | [fase-07-pantallas.md](fase-07-pantallas.md) | ⬜ Pendiente | `MainActivity` muestra solo "Momentum" |
 | 8 Recordatorios y Salud | [fase-08-plataforma.md](fase-08-plataforma.md) | ⬜ Pendiente | — |
-| 9 Herramientas, CI, docs | [fase-09-ci-docs.md](fase-09-ci-docs.md) | 🟡 Parcial | `core.yml` existe; faltan `android.yml`, `screenshots.yml`, `translations`, docs |
+| 9 Herramientas, CI, docs | [fase-09-ci-docs.md](fase-09-ci-docs.md) | 🟡 Parcial | `core.yml` existe; job `translations` añadido; faltan `android.yml`, `screenshots.yml`, docs |
 | 10 Paridad y corte | [fase-10-paridad.md](fase-10-paridad.md) | ⬜ Pendiente | — |
 
 ## Dependencias

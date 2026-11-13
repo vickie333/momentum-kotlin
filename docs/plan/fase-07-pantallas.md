@@ -15,6 +15,8 @@ Plan maestro §5 Fase 7. Depende de: Fases 5 y 6. Origen: `fitness-app/Momentum/
 
 Todo texto por `L(...)`; `contentDescription`; toque ≥ 48 dp; escala de fuente; claro/oscuro.
 
+- `Loc.date` / formato de fechas (`EEEE`, `MMMMd`, `jm`) con la `Locale` del idioma de la app; detección del idioma del dispositivo con `AppLanguage.detect`.
+
 ## Validación por pantalla
 
 UI test Compose con modo demo + capturas en en/es/pt. Recorrido manual (argent, emulador): onboarding → primer entrenamiento → terminar → progreso → exportar y restaurar.
