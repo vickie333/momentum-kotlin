@@ -9,6 +9,8 @@ Plan maestro §5 Fase 8, riesgos 7–8. Depende de: Fase 5 (y 7f para la UI de a
 - Reprogramar en `BOOT_COMPLETED` y al cambiar el perfil.
 - Validación: recordatorio disparado con `adb` en emulador.
 
+- `strings.xml` en `values`, `values-es`, `values-pt-rBR`: nombre de la app y textos de permisos de Health Connect (equivalente a `InfoPlist.strings` de iOS).
+
 ## 8b Salud (aplazable tras el corte)
 
 - `shared/health/HealthGateway`: `requestAuthorization`, `saveWorkout`, `saveWeight`, `readSteps`, `readActiveEnergy`.

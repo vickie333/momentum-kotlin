@@ -19,3 +19,18 @@ jobs:
         run: sdkmanager 'platforms;android-37.0' 'build-tools;37.0.0'
       - name: Test shared core and compile Android app
         run: ./gradlew :shared:jvmTest :androidApp:assembleDebug --stacktrace
+  translations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerate translation data
+        run: |
+          python3 tools/i18n/export_kotlin.py --strict
+          python3 tools/i18n/export_exercises_kotlin.py
+      - name: Fail if data/i18n is out of date
+        run: |
+          git status --porcelain -- data/i18n
+          test -z "$(git status --porcelain -- data/i18n)"

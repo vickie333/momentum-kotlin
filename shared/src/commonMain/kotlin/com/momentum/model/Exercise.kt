@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable enum class MuscleGroup { chest, back, legs, shoulders, arms, core, cardio, fullBody, mobility;
     val id get() = name
-    val title get() = L(when(this) { chest -> "Chest"; back -> "Back"; legs -> "Legs"; shoulders -> "Shoulders"; arms -> "Arms"; core -> "Core"; cardio -> "Cardio"; fullBody -> "Full body"; mobility -> "Mobility" })
+    val title get() = when(this) { chest -> L("Chest"); back -> L("Back"); legs -> L("Legs"); shoulders -> L("Shoulders"); arms -> L("Arms"); core -> L("Core"); cardio -> L("Cardio"); fullBody -> L("Full body"); mobility -> L("Mobility") }
     val symbol get() = when(this) { chest -> "figure.strengthtraining.traditional"; back -> "figure.rower"; legs -> "figure.step.training"; shoulders -> "figure.arms.open"; arms -> "dumbbell.fill"; core -> "figure.core.training"; cardio -> "figure.highintensity.intervaltraining"; fullBody -> "figure.cross.training"; mobility -> "figure.flexibility" }
 }
 @Serializable enum class ExerciseKind { reps, timed }

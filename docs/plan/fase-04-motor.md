@@ -25,6 +25,8 @@ Plan maestro §5 Fase 4, riesgos 1–4. Depende de: Fases 2 y 3. Origen: `fitnes
 - Diferencias inevitables → `docs/ENGINE.md`.
 - Portar `TestSupport` primero.
 
+Tests de localización del motor (`testEngineTextIsFullyTranslated`, `testSwapSuggestionsAreTranslated` de `LocalizationTests.swift`).
+
 ## Validación (aceptación)
 
 - 100 % de tests portados en verde.
