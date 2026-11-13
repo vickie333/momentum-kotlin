@@ -1,0 +1,65 @@
+
+=== SIM B intermediate DB (max 24 kg), 3-week break after week 9
+w01 build1 sessions:4  Dumbbell Bench 4x 18 kg [10/10/10/10] | Goblet Squat 3x 18 kg [10/10/10] | Dumbbell Bench 3x 20 kg [10/10/10] | Goblet Squat 4x 20 kg [10/10/10/10]
+      • Your last two sessions felt easy, so upcoming workouts get a bit tougher.
+w02 build2 sessions:4  Dumbbell Bench 5x 22 kg [10/10/10/10/10] | Goblet Squat 4x 22 kg [10/10/10/10] | Dumbbell Bench 3x 24 kg [10/10/10] | Goblet Squat 4x 24 kg [10/9/9/8]
+w03 build3 sessions:4  Dumbbell Bench 4x 24 kg [12/12/12/12] | Goblet Squat 4x 24 kg [10/10/10/10] | Dumbbell Bench 3x 24 kg [14/14/14] | Goblet Squat 4x 24 kg [10/10/10/9]
+w04 build4 sessions:4  Dumbbell Bench 3x 24 kg [16/16/16] | Goblet Squat 4x 24 kg [10/10/10/10] | Dumbbell Bench 3x 24 kg [17/17/17] | Goblet Squat 4x 24 kg [12/12/10/10]
+w05 build1 sessions:4  Dumbbell Bench 3x 20 kg [10/10/10] | Goblet Squat 2x 20 kg [10/10] | Goblet Squat 3x 22 kg [10/10/10]
+      • LEVEL -> Advanced
+      • You're outgrowing this plan. Moved up to Advanced.
+w06 build2 sessions:4  Dumbbell Bench 3x 22 kg [10/10/10] | Goblet Squat 3x 24 kg [10/10/10] | Goblet Squat 3x 24 kg [12/12/11]
+w07 build3 sessions:4  Dumbbell Bench 3x 24 kg [10/10/10] | Goblet Squat 3x 24 kg [13/13/13] | Goblet Squat 3x 24 kg [10/10/10]
+w08 DELOAD sessions:4  Dumbbell Bench 2x 20 kg [12/12] | Goblet Squat 2x 20 kg [12/12] | Goblet Squat 2x 18 kg [10/10]
+      • Your last two sessions felt easy, so upcoming workouts get a bit tougher.
+w09 build1 sessions:4  Dumbbell Bench 3x 22 kg [10/10/10] | Goblet Squat 4x 20 kg [10/10/10/10] | Dumbbell Bench 3x 24 kg [10/10/10] | Goblet Squat 4x 22 kg [10/10/10/10]
+w10  (no training)
+w11  (no training)
+w12  (no training)
+w13 build1 sessions:4  Dumbbell Bench 2x 20 kg [12/12] | Goblet Squat 4x 20 kg [10/10/10/10] | Dumbbell Bench 3x 22 kg [10/10/10] | Goblet Squat 4x 22 kg [10/10/10/10]
+      • Welcome back. A fresh training block starts this week.
+w14 build2 sessions:4  Dumbbell Bench 3x 24 kg [10/10/10] | Goblet Squat 4x 24 kg [10/10/10/10] | Dumbbell Bench 3x 24 kg [12/12/12] | Goblet Squat 4x 24 kg [12/12/12/12]
+w15 build3 sessions:4  Dumbbell Bench 3x 24 kg [14/14/14] | Goblet Squat 4x 24 kg [14/14/14/14] | Dumbbell Bench 3x 24 kg [16/16/16] | Goblet Squat 4x 24 kg [16/16/15/15]
+w16 DELOAD sessions:4  Dumbbell Bench 3x 20 kg [18/18/18] | Goblet Squat 2x 20 kg [10/10] | Dumbbell Bench 3x 18 kg [10/10/10] | Goblet Squat 2x 18 kg [10/10]
+  final: level Advanced, intensity 3, rungs coreFlexion=1 coreStability=2 hinge=1 lunge=1 pull=1 push=2 squat=0 triceps=1 verticalPush=1
+
+=== SIM A beginner bodyweight (knees)
+w01 build1 sessions:3  Wall Push-Up 2x  [11/11] | Bodyweight Squ 3x  [15/14/14] | Wall Push-Up 2x  [12/11] | Wall Push-Up 2x  [11/11] | Bodyweight Squ 3x  [14/14/13] | Dead Bug 2x  [16/14]
+w02 build2 sessions:3  Wall Push-Up 2x  [12/11] | Bodyweight Squ 3x  [15/14/13] | Wall Push-Up 2x  [12/12] | Wall Push-Up 2x  [11/11] | Bodyweight Squ 3x  [15/15/14] | Dead Bug 2x  [15/15]
+w03 build3 sessions:3  Wall Push-Up 2x  [13/12] | Bodyweight Squ 3x  [15/15/14] | Wall Push-Up 2x  [12/12] | Wall Push-Up 2x  [12/11] | Bodyweight Squ 3x  [15/14/13] | Dead Bug 2x  [16/16]
+      • Hip hinge: moving up to Single-Leg Glute Bridge.
+w04 build4 sessions:3  Wall Push-Up 2x  [12/12] | Bodyweight Squ 3x  [15/14/14] | Wall Push-Up 2x  [13/11] | Wall Push-Up 2x  [13/12] | Bodyweight Squ 3x  [15/15/15] | Dead Bug 2x  [17/16]
+w05 build5 sessions:3  Wall Push-Up 2x  [12/12] | Bodyweight Squ 3x  [16/15/15] | Wall Push-Up 2x  [14/12] | Wall Push-Up 2x  [13/12] | Bodyweight Squ 3x  [17/15/15] | Dead Bug 2x  [17/17]
+w06 DELOAD sessions:3  Wall Push-Up 2x  [13/12] | Bodyweight Squ 2x  [17/17] | Wall Push-Up 2x  [14/13] | Wall Push-Up 2x  [13/13] | Bodyweight Squ 2x  [17/16] | Dead Bug 2x  [18/16]
+w07 build1 sessions:3  Wall Push-Up 2x  [13/13] | Bodyweight Squ 3x  [18/17/15] | Wall Push-Up 2x  [13/13] | Wall Push-Up 2x  [14/13] | Bodyweight Squ 3x  [17/16/16] | Dead Bug 2x  [18/18]
+w08 build2 sessions:3  Wall Push-Up 2x  [14/13] | Bodyweight Squ 3x  [17/17/16] | Wall Push-Up 2x  [14/14] | Wall Push-Up 2x  [14/14] | Bodyweight Squ 3x  [18/17/16] | Dead Bug 2x  [18/18]
+w09 build3 sessions:3  Wall Push-Up 2x  [14/14] | Bodyweight Squ 3x  [18/18/17] | Wall Push-Up 2x  [14/14] | Wall Push-Up 2x  [14/14] | Bodyweight Squ 3x  [18/18/17] | Dead Bug 2x  [19/19]
+      • Pull: moving up to Table Inverted Row.
+w10 build4 sessions:3  Wall Push-Up 2x  [14/14] | Bodyweight Squ 3x  [18/18/18] | Wall Push-Up 2x  [15/14] | Wall Push-Up 2x  [14/14] | Bodyweight Squ 3x  [19/19/17] | Dead Bug 2x  [19/19]
+w11 build5 sessions:3  Wall Push-Up 2x  [15/14] | Bodyweight Squ 3x  [19/19/18] | Wall Push-Up 2x  [15/14] | Wall Push-Up 2x  [14/14] | Bodyweight Squ 3x  [20/18/17] | Dead Bug 2x  [20/19]
+w12 DELOAD sessions:3  Wall Push-Up 2x  [15/14] | Bodyweight Squ 2x  [20/19] | Wall Push-Up 2x  [15/15] | Knee Push-Up 2x  [10/10] | Bodyweight Squ 2x  [20/18] | Dead Bug 2x  [20/20]
+      • Core stability: moving up to Plank.
+      • Push: moving up to Knee Push-Up.
+      • Triceps: moving up to Close-Grip Push-Up.
+w13 build1 sessions:3  Wall Push-Up 2x  [16/15] | Knee Push-Up 2x  [10/10] | Wall Push-Up 2x  [16/16] | Dead Bug 2x  [22/20]
+w14 build2 sessions:3  Wall Push-Up 2x  [17/16] | Knee Push-Up 2x  [11/11] | Wall Push-Up 2x  [16/15] | Dead Bug 2x  [22/21]
+      • Shoulder press: moving up to Pike Push-Up.
+w15 build3 sessions:3  Wall Push-Up 2x  [16/17] | Knee Push-Up 2x  [11/11] | Wall Push-Up 2x  [17/15] | Dead Bug 2x  [23/22]
+w16 build4 sessions:3  Wall Push-Up 2x  [18/16] | Knee Push-Up 2x  [11/11] | Wall Push-Up 2x  [17/16] | Dead Bug 2x  [23/22]
+  final: level Beginner, intensity 0, rungs coreFlexion=0 coreStability=1 hinge=1 lunge=0 pull=1 push=1 squat=0 triceps=1 verticalPush=1
+
+=== SIM C advanced gym
+w01 build1 sessions:5  Barbell Bench  4x 85 kg [6/6/6/6] | Barbell Bench  5x 87.5 kg [6/6/6/6/6]
+      • Your last two sessions felt easy, so upcoming workouts get a bit tougher.
+w02 build2 sessions:5  Barbell Bench  5x 90 kg [6/6/6/6/6] | Barbell Bench  5x 92.5 kg [6/6/6/6/6]
+w03 build3 sessions:5  Barbell Bench  5x 95 kg [6/6/6/6/6] | Barbell Bench  5x 97.5 kg [6/6/6/6/6]
+w04 DELOAD sessions:5  Barbell Bench  3x 87.5 kg [6/6/6] | Barbell Bench  3x 77.5 kg [6/6/6]
+w05 build1 sessions:5  Barbell Back S 4x 95 kg [6/6/6/6]
+w06 build2 sessions:5  Barbell Back S 4x 100 kg [6/6/6/6]
+w07 build3 sessions:5  Barbell Back S 4x 105 kg [6/6/6/6]
+w08 DELOAD sessions:5  Barbell Back S 2x 90 kg [6/6]
+w09 build1 sessions:5  Barbell Bench  3x 80 kg [6/6/6] | Barbell Bench  2x 82.5 kg [6/6] | Barbell Back S 4x 95 kg [6/6/6/6]
+w10 build2 sessions:5  Barbell Bench  3x 85 kg [6/6/6] | Barbell Bench  2x 87.5 kg [6/6] | Barbell Back S 4x 100 kg [6/6/6/6]
+w11 build3 sessions:5  Barbell Bench  3x 90 kg [6/6/6] | Barbell Bench  2x 92.5 kg [6/6] | Barbell Back S 4x 105 kg [6/6/6/6]
+w12 DELOAD sessions:5  Barbell Bench  2x 82.5 kg [6/6] | Barbell Bench  2x 72.5 kg [6/6] | Barbell Back S 2x 90 kg [6/6]
+  final: level Advanced, intensity 3, rungs coreFlexion=2 coreStability=3 hinge=1 lunge=1 pull=2 push=3 squat=1 triceps=2 verticalPush=2

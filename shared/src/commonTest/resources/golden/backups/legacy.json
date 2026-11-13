@@ -1,0 +1,264 @@
+{
+  "exportedAt" : "2026-01-06T09:00:00Z",
+  "format" : "momentum-backup",
+  "profile" : {
+    "age" : 35,
+    "blockStart" : "2026-01-05T09:00:00Z",
+    "check" : {
+
+    },
+    "equipment" : "bodyweight",
+    "excludedExercises" : [
+
+    ],
+    "frequency" : 2,
+    "goal" : "buildMuscle",
+    "heightCm" : 170,
+    "history" : 2,
+    "intensity" : 0,
+    "level" : "intermediate",
+    "limitations" : [
+      "shoulders"
+    ],
+    "lowImpactOnly" : false,
+    "name" : "Sam",
+    "onboarded" : true,
+    "rungs" : {
+      "coreFlexion" : 1,
+      "coreStability" : 1,
+      "hinge" : 1,
+      "lunge" : 0,
+      "pull" : 1,
+      "push" : 2,
+      "squat" : 0,
+      "triceps" : 1,
+      "verticalPush" : 1
+    },
+    "sessionMinutes" : 30,
+    "sex" : "male",
+    "startDate" : "2026-01-05T09:00:00Z",
+    "trainingWeekdays" : [
+      2,
+      5
+    ],
+    "units" : "metric",
+    "weightKg" : 70
+  },
+  "sessions" : [
+    {
+      "calories" : 250,
+      "completedSets" : 21,
+      "date" : "2026-01-05T09:00:00Z",
+      "durationSeconds" : 1860,
+      "feedback" : "justRight",
+      "id" : "00000000-0000-0000-0000-000000000001",
+      "logs" : [
+        {
+          "effort" : "good",
+          "exerciseID" : "bw_squat",
+          "id" : "00000000-0000-0000-0000-000000000001",
+          "repMax" : 15,
+          "repMin" : 8,
+          "sets" : [
+            {
+              "reps" : 14,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 13,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 14,
+              "seconds" : 0,
+              "weightKg" : 0
+            }
+          ],
+          "target" : 8,
+          "targetSets" : 3
+        },
+        {
+          "effort" : "good",
+          "exerciseID" : "pushup",
+          "id" : "00000000-0000-0000-0001-000000000001",
+          "repMax" : 15,
+          "repMin" : 8,
+          "sets" : [
+            {
+              "reps" : 8,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 7,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 5,
+              "seconds" : 0,
+              "weightKg" : 0
+            }
+          ],
+          "target" : 8,
+          "targetSets" : 3
+        },
+        {
+          "effort" : "good",
+          "exerciseID" : "inverted_row",
+          "id" : "00000000-0000-0000-0002-000000000001",
+          "repMax" : 15,
+          "repMin" : 8,
+          "sets" : [
+            {
+              "reps" : 14,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 13,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 12,
+              "seconds" : 0,
+              "weightKg" : 0
+            }
+          ],
+          "target" : 8,
+          "targetSets" : 3
+        },
+        {
+          "effort" : "good",
+          "exerciseID" : "single_leg_bridge",
+          "id" : "00000000-0000-0000-0003-000000000001",
+          "repMax" : 15,
+          "repMin" : 8,
+          "sets" : [
+            {
+              "reps" : 14,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 13,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 12,
+              "seconds" : 0,
+              "weightKg" : 0
+            }
+          ],
+          "target" : 8,
+          "targetSets" : 3
+        },
+        {
+          "effort" : "good",
+          "exerciseID" : "plank_tap",
+          "id" : "00000000-0000-0000-0004-000000000001",
+          "repMax" : 20,
+          "repMin" : 10,
+          "sets" : [
+            {
+              "reps" : 14,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 14,
+              "seconds" : 0,
+              "weightKg" : 0
+            }
+          ],
+          "target" : 10,
+          "targetSets" : 2
+        },
+        {
+          "effort" : "good",
+          "exerciseID" : "plank",
+          "id" : "00000000-0000-0000-0005-000000000001",
+          "repMax" : 45,
+          "repMin" : 20,
+          "sets" : [
+            {
+              "reps" : 0,
+              "seconds" : 36,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 0,
+              "seconds" : 34,
+              "weightKg" : 0
+            }
+          ],
+          "target" : 20,
+          "targetSets" : 2
+        },
+        {
+          "effort" : "good",
+          "exerciseID" : "close_pushup",
+          "id" : "00000000-0000-0000-0006-000000000001",
+          "repMax" : 15,
+          "repMin" : 8,
+          "sets" : [
+            {
+              "reps" : 12,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 11,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 10,
+              "seconds" : 0,
+              "weightKg" : 0
+            }
+          ],
+          "target" : 8,
+          "targetSets" : 3
+        },
+        {
+          "effort" : "good",
+          "exerciseID" : "calf_raise",
+          "id" : "00000000-0000-0000-0007-000000000001",
+          "repMax" : 20,
+          "repMin" : 10,
+          "sets" : [
+            {
+              "reps" : 18,
+              "seconds" : 0,
+              "weightKg" : 0
+            },
+            {
+              "reps" : 18,
+              "seconds" : 0,
+              "weightKg" : 0
+            }
+          ],
+          "target" : 10,
+          "targetSets" : 2
+        }
+      ],
+      "plannedSets" : 21,
+      "readiness" : "normal",
+      "title" : "Full Body",
+      "wasDeload" : false
+    }
+  ],
+  "version" : 1,
+  "weights" : [
+    {
+      "date" : "2026-01-05T09:00:00Z",
+      "id" : "00000000-0000-0000-0000-000000000001",
+      "kg" : 80
+    }
+  ]
+}
