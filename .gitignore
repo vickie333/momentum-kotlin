@@ -10,3 +10,4 @@ local.properties
 # Codex handoff working files
 .claude/plan.md
 .claude/codex-result.md
+__pycache__/
