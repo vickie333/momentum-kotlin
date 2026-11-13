@@ -6,9 +6,9 @@ Plan maestro: [`../PLAN-MIGRACION-KOTLIN.md`](../PLAN-MIGRACION-KOTLIN.md). Cada
 
 | Fase | Subplan | Estado | Evidencia |
 |---|---|---|---|
-| 0 Fixtures de oro (repo Swift) | [fase-00-golden.md](fase-00-golden.md) | ✅ Hecha (falta push en `fitness-app`) | commit `34637d9` en `fitness-app`; fixtures copiados a `shared/src/commonTest/resources/golden/` |
+| 0 Fixtures de oro (repo Swift) | [fase-00-golden.md](fase-00-golden.md) | ✅ Hecha (`fitness-app` es externo, solo lectura) | fixtures copiados a `shared/src/commonTest/resources/golden/` |
 | 1 Esqueleto Gradle/KMP | [fase-01-esqueleto.md](fase-01-esqueleto.md) | ✅ Hecha | `./gradlew :shared:jvmTest :androidApp:assembleDebug` en verde (2026-11-13) |
-| 2 Modelos y serialización | [fase-02-modelos.md](fase-02-modelos.md) | ⏳ Siguiente | solo `exercises.json`/`motions.json` copiados a recursos |
+| 2 Modelos y serialización | [fase-02-modelos.md](fase-02-modelos.md) | ✅ Hecha | `:shared:jvmTest`, `:androidApp:assembleDebug` y `:shared:compileKotlinIosSimulatorArm64` en verde |
 | 3 Localización | [fase-03-i18n.md](fase-03-i18n.md) | ⬜ Pendiente | `tools/i18n/` copiado, sin exportadores Kotlin |
 | 4 Motor | [fase-04-motor.md](fase-04-motor.md) | ⬜ Pendiente | — |
 | 5 Almacén de estado | [fase-05-store.md](fase-05-store.md) | ⬜ Pendiente | — |

@@ -13,7 +13,7 @@ Plan maestro §5 Fase 4, riesgos 1–4. Depende de: Fases 2 y 3. Origen: `fitnes
 | 4e | `AdaptiveEngine` | `AdaptationTests` |
 | 4f | `PlanGenerator` (721 líneas) | `PlanTests` (606), `InvariantTests`, `plans.json` |
 | 4g | `WeeklyReview`, `Reminders` (solo `plan`, pura) | `WeeklyReviewTests`, `ReminderTests`, `weekly_review.json`, `reminders.json` |
-| 4h | `DemoData` | `DemoDataTests`, `ExerciseProgressTests`, `HistoryTests` |
+| 4h | `DemoData`, `ExerciseProgress` (`Progression.estimatedOneRepMax`) | `DemoDataTests`, `ExerciseProgressTests`, `HistoryTests` |
 | 4i | `EngineSim` en `jvmMain` (`plans`, `sim [-v]`, `alts`) | `sim16w.json`, `diff` contra `sim16w.txt` |
 
 ## Reglas de portado

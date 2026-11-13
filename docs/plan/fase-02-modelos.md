@@ -1,4 +1,4 @@
-# Fase 2 — Modelos y serialización ⏳ (siguiente)
+# Fase 2 — Modelos y serialización ✅
 
 Plan maestro §5 Fase 2 y riesgo 5. Origen: `~/Documents/github/fitness-app/Momentum/Models/`.
 
@@ -15,7 +15,7 @@ Paquete `com.momentum.model` en `shared/src/commonMain/kotlin/`. Nada de `java.*
 2. **`Motion.swift`, `ExerciseMeta.swift`, `ExerciseLibrary.swift`** → decodificar `exercises.json` y `motions.json` de `commonMain/resources` (lector de recursos multiplataforma: `expect/actual` o generar constantes; no usar `ClassLoader` en common).
 3. **`SessionSummary.swift`, `ExerciseProgress.swift`** → agrupación por día con orden determinista (riesgo 3).
 4. **`Backup.swift`** → `PersonalData`, `BackupFile` (`format = "momentum-backup"`, `currentVersion = 1`), `BackupError { NotABackup, NewerVersion(n) }`, exportación CSV.
-   - `Json { ignoreUnknownKeys = true; coerceInputValues = true; explicitNulls = false }`.
+   - `Json { ignoreUnknownKeys = true; explicitNulls = false }`, con tolerancia campo a campo solo en `UserProfile`.
    - Serializador de `Instant` ISO-8601 con `Z` y **sin** fracciones de segundo.
 5. Utilidad `roundHalfAwayFromZero` (riesgo 4) en `shared`, con tests.
 
@@ -32,3 +32,13 @@ Paquete `com.momentum.model` en `shared/src/commonMain/kotlin/`. Nada de `java.*
 ## Notas para el handoff
 
 Effort sugerido: medium. Convertir este subplan en plan autocontenido con `feature-plan` (Codex no ve `fitness-app` salvo por ruta; incluir rutas absolutas a los archivos Swift de origen).
+
+## Resultado y desviaciones
+
+- Catálogos de `data/*.json` embebidos por `generateMomentumData`; modelos, backup y CSV portados a `shared`.
+- SF Symbols conservados como claves `String` hasta que Android los consuma en fase 6.
+- `ExerciseProgress` pasa a fase 4h porque depende de `Progression.estimatedOneRepMax`.
+- Los UUID se guardan como `String` para preservar exactamente los valores de iOS.
+- Decodificación estricta como en Swift salvo `UserProfile` (tolerante campo a campo).
+- `formatFixed` replica el redondeo de C (`%.nf`, empates al par sobre el valor binario exacto).
+- `fitness-app` es externo y se usa solo como referencia de lectura.

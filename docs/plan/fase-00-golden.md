@@ -11,7 +11,4 @@ Plan maestro §5 Fase 0.
 - Entradas fijas: inglés, UTC, 2026-01-05 09:00, semilla y UUID fijos, claves JSON ordenadas.
 - Hallazgo de no determinismo: `EngineSim sim` imprimía `Set(notes)` en orden arbitrario; ahora se ordenan en la CLI. Las decisiones del motor de la app no cambian. Ver `golden/README.md`.
 
-## Pendiente
-
-- [ ] El commit `34637d9` está en la rama `claude/fervent-feynman-74fe50` de `fitness-app`, **1 commit por delante de origin** y no en `main`. Hacer push y abrir PR en `fitness-app` (plan maestro §7, PR 1).
-- [ ] Anotar el resultado de `swift test` (170+ tests) como línea base en el PR.
+`fitness-app` es un repositorio externo (de Ross): no se modifica, no se hace push ni PR desde este proyecto. Los fixtures copiados aquí son la referencia.
