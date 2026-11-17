@@ -10,7 +10,7 @@ Plan maestro: [`../PLAN-MIGRACION-KOTLIN.md`](../PLAN-MIGRACION-KOTLIN.md). Cada
 | 1 Esqueleto Gradle/KMP | [fase-01-esqueleto.md](fase-01-esqueleto.md) | ✅ Hecha | `./gradlew :shared:jvmTest :androidApp:assembleDebug` en verde (2026-11-13) |
 | 2 Modelos y serialización | [fase-02-modelos.md](fase-02-modelos.md) | ✅ Hecha | `:shared:jvmTest`, `:androidApp:assembleDebug` y `:shared:compileKotlinIosSimulatorArm64` en verde |
 | 3 Localización | [fase-03-i18n.md](fase-03-i18n.md) | ✅ Hecha | `LocalizationTest` + job `translations` |
-| 4 Motor | [fase-04-motor.md](fase-04-motor.md) | ⬜ Pendiente | — |
+| 4 Motor | [fase-04-motor.md](fase-04-motor.md) | 🟡 En curso (4a–4b hechas) | `TrainingCalendar`, `Periodization`, `Recovery`, `VolumePlanner`, `Progression`; `progression.json` 120 casos |
 | 5 Almacén de estado | [fase-05-store.md](fase-05-store.md) | ⬜ Pendiente | — |
 | 6 Tema, componentes, figuras | [fase-06-tema-figuras.md](fase-06-tema-figuras.md) | ⬜ Pendiente | — |
 | 7 Pantallas | [fase-07-pantallas.md](fase-07-pantallas.md) | ⬜ Pendiente | `MainActivity` muestra solo "Momentum" |

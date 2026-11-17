@@ -1,4 +1,4 @@
-# Fase 4 — Motor ⬜ (fase crítica)
+# Fase 4 — Motor 🟡 (fase crítica)
 
 Plan maestro §5 Fase 4, riesgos 1–4. Depende de: Fases 2 y 3. Origen: `fitness-app/Momentum/Engine/`.
 
@@ -6,15 +6,23 @@ Plan maestro §5 Fase 4, riesgos 1–4. Depende de: Fases 2 y 3. Origen: `fitnes
 
 | # | Archivo | Golden / tests |
 |---|---|---|
-| 4a | `TrainingCalendar` (kotlinx-datetime; `weekStart`, `weeksBetween`, `daysBetween`, `sameDay`) | tests de DST y semana que cruza año |
-| 4b | `Periodization`, `Progression` | `ProgressionTests`, `progression.json` |
+| 4a ✅ | `TrainingCalendar` (kotlinx-datetime; `weekStart`, `weeksBetween`, `daysBetween`, `sameDay`) | tests de DST y semana que cruza año |
+| 4b ✅ | `Periodization` (`Recovery`, `VolumePlanner`), `Progression`, `ExerciseProgress` | `ProgressionTests`, `ExerciseProgressTests`, `progression.json` (120/120 casos cubiertos) |
 | 4c | `Assessment` | `AssessmentTests`, `assessment.json` |
 | 4d | `Alternatives` | `alternatives.json` |
 | 4e | `AdaptiveEngine` | `AdaptationTests` |
 | 4f | `PlanGenerator` (721 líneas) | `PlanTests` (606), `InvariantTests`, `plans.json` |
 | 4g | `WeeklyReview`, `Reminders` (solo `plan`, pura) | `WeeklyReviewTests`, `ReminderTests`, `weekly_review.json`, `reminders.json` |
-| 4h | `DemoData`, `ExerciseProgress` (`Progression.estimatedOneRepMax`) | `DemoDataTests`, `ExerciseProgressTests`, `HistoryTests` |
+| 4h | `DemoData` (`ExerciseProgress` completado en 4b) | `DemoDataTests`, `HistoryTests` |
 | 4i | `EngineSim` en `jvmMain` (`plans`, `sim [-v]`, `alts`) | `sim16w.json`, `diff` contra `sim16w.txt` |
+
+En Kotlin, `TrainingCalendar.timeZone` reemplaza `Calendar.current` de Swift; las pruebas del fixture fijan UTC.
+
+Pendientes de la revisión de 4a:
+
+- `TrainingCalendar.timeZone` se lee una vez al cargar; Swift sigue la zona del dispositivo en cada acceso. Resolver en la Fase 5/7 (override opcional que vuelva a `TimeZone.currentSystemDefault()`).
+- Falta un helper para sumar días de calendario (`addDays`), necesario para `AdaptiveEngine`, `PlanGenerator`, `WeeklyReview` y `DemoData`: añadirlo en 4e.
+- Tests negativos de `Periodization` (límite de 13 frente a 14 días, `logFailed` que da `false`).
 
 ## Reglas de portado
 
